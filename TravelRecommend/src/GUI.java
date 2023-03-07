@@ -85,7 +85,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 	   
 		public GUI(){
 		   
-	    	image = new ImageIcon("/Users/sotirisemmanouil/eclipse-workspace/TravelRecommend/src/image.jpg");
+	    	image = new ImageIcon("/Users/sotirisemmanouil/git/repository4/TravelRecommend/src/image.jpg");
 			label = new JLabel(image);
 		    label.setBounds(300,100,300,300);
 			label.setVisible(true);

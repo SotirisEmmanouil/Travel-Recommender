@@ -1,5 +1,5 @@
 import java.awt.Color;
-import java.awt.Container;
+
 import java.awt.Desktop;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -22,7 +22,6 @@ public class newGUI extends JFrame implements ActionListener {
 	Desktop desk = Desktop.getDesktop();
 	
   public newGUI(String [] arr, String [] arr2){
-	  Container content = this.getContentPane();
 	  	result = new JTextArea("Your recommendations:\n\n");
 	  	result.setFont(new Font("Arial",Font.BOLD,20));
 	  	result.setForeground(Color.BLUE);
@@ -43,7 +42,7 @@ public class newGUI extends JFrame implements ActionListener {
 		
 		buttone = new JButton();
 		buttone.setBounds(500, 50, 150, 50); 
-		buttone.setText("Link to location 1");
+		buttone.setText(arr[0]);
 		buttone.addActionListener(this);
 		buttone.setFocusable(false);
 		buttone.setHorizontalTextPosition(JButton.CENTER);
@@ -58,7 +57,7 @@ public class newGUI extends JFrame implements ActionListener {
 		
 		buttone2 = new JButton();
 		buttone2.setBounds(500, 100, 150, 50); 
-		buttone2.setText("Link to location 2");
+		buttone2.setText(arr[1]);
 		buttone2.addActionListener(this);
 		buttone2.setFocusable(false);
 		buttone2.setHorizontalTextPosition(JButton.CENTER);
@@ -73,7 +72,7 @@ public class newGUI extends JFrame implements ActionListener {
 		
 		buttone3 = new JButton();
 		buttone3.setBounds(500, 150, 150, 50); 
-		buttone3.setText("Link to location 3");
+		buttone3.setText(arr[2]);
 		buttone3.addActionListener(this);
 		buttone3.setFocusable(false);
 		buttone3.setHorizontalTextPosition(JButton.CENTER);
@@ -88,7 +87,7 @@ public class newGUI extends JFrame implements ActionListener {
 		
 		buttone4 = new JButton();
 		buttone4.setBounds(500, 200, 150, 50); 
-		buttone4.setText("Link to location 4");
+		buttone4.setText(arr[3]);
 		buttone4.addActionListener(this);
 		buttone4.setFocusable(false);
 		buttone4.setHorizontalTextPosition(JButton.CENTER);
