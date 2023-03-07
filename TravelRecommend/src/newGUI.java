@@ -104,7 +104,7 @@ public class newGUI extends JFrame implements ActionListener {
 		emptyAr = arr2.clone();
 	  	
 	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setSize(700,700);
+		this.setSize(700,400);
 		this.setTitle("Results!");
 		this.add(result);
 		this.setLayout(null);
