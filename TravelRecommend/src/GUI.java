@@ -52,39 +52,39 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 				                                    "https://www.hotels.com/de106751/hotels-varna-bulgaria/"};
 		
 		public static String [] southOnlyLinks = {"https://www.hotels.com/de591413/hotels-kastoria-greece/",
-													"https://www.hotels.com/de864484/hotels-bitola-north-macedonia/",
-													  "https://www.hotels.com/de1605942/hotels-belgrade-serbia/",
-													     "https://www.hotels.com/de105012/hotels-sofia-bulgaria/"};
+					               "https://www.hotels.com/de864484/hotels-bitola-north-macedonia/",
+						    "https://www.hotels.com/de1605942/hotels-belgrade-serbia/",
+						    "https://www.hotels.com/de105012/hotels-sofia-bulgaria/"};
 		
 		public static String [] eastOnlyLinks = {"https://www.hotels.com/de1036999/hotels-warsaw-poland/",
-													"https://www.hotels.com/de1644851/hotels-tallinn-and-vicinity-estonia/",
-													  "https://www.hotels.com/de1644852/hotels-vilnius-and-vicinity-lithuania/",    
-													    	"https://www.hotels.com/de805270/hotels-riga-latvia/"};
+							"https://www.hotels.com/de1644851/hotels-tallinn-and-vicinity-estonia/",
+						 "https://www.hotels.com/de1644852/hotels-vilnius-and-vicinity-lithuania/",    
+									"https://www.hotels.com/de805270/hotels-riga-latvia/"};
 								
 		public static String [] eastBeachLinks = {"https://www.hotels.com/de1037308/hotels-kolobrzeg-poland/",			
-													"https://www.hotels.com/de1032900/hotels-pobierowo-poland/",
-													"https://www.hotels.com/de1028414/hotels-gdansk-poland/",
-													  "https://www.hotels.com/de1041863/hotels-gdynia-poland/"};
+								"https://www.hotels.com/de1032900/hotels-pobierowo-poland/",
+								"https://www.hotels.com/de1028414/hotels-gdansk-poland/",
+								 "https://www.hotels.com/de1041863/hotels-gdynia-poland/"};
 		
 		public static String [] westBeachLinks = {"https://www.hotels.com/de543279/hotels-toulon-france/",
-												  "https://www.hotels.com/nh1735376/hotels-in-nice-city-centre-nice-france/",									
-												   "https://www.hotels.com/de1634386/hotels-antibes-france/",
-												 "https://www.hotels.com/de1644378/hotels-cannes-and-vicinity-france/"};		
+								"https://www.hotels.com/nh1735376/hotels-in-nice-city-centre-nice-france/",									
+								 "https://www.hotels.com/de1634386/hotels-antibes-france/",
+							"https://www.hotels.com/de1644378/hotels-cannes-and-vicinity-france/"};		
 		
 		public static String [] westOnlyLinks = {"https://www.hotels.com/de504261/hotels-paris-france/",
-												"https://www.hotels.com/de384011/hotels-munich-germany/",
-												"https://www.hotels.com/de712491/hotels-rome-italy/",			
-												"https://www.hotels.com/de712492/hotels-milan-italy/"};
+								"https://www.hotels.com/de384011/hotels-munich-germany/",
+								"https://www.hotels.com/de712491/hotels-rome-italy/",			
+								"https://www.hotels.com/de712492/hotels-milan-italy/"};
 		
 		public static String [] northOnlyLinks = {"https://www.hotels.com/de1641520/hotels-reykjavik-and-vicinity-iceland/",
-													"https://www.hotels.com/de554344/hotels-edinburgh-united-kingdom/",
-													"https://www.hotels.com/de939302/hotels-oslo-norway/",
-													"https://www.hotels.com/de1704892/hotels-near-central-stockholm-stockholm-sweden/"};
+									"https://www.hotels.com/de554344/hotels-edinburgh-united-kingdom/",
+									"https://www.hotels.com/de939302/hotels-oslo-norway/",
+									"https://www.hotels.com/de1704892/hotels-near-central-stockholm-stockholm-sweden/"};
 	
 		public static String [] northBeachLinks = {"https://www.hotels.com/de553391/hotels-hastings-united-kingdom/",
-													"https://www.hotels.com/de556383/hotels-brighton-united-kingdom/",		
-													"https://www.hotels.com/de544256/hotels-bournemouth-united-kingdom/",
-													"https://www.hotels.com/de544879/hotels-felixstowe-united-kingdom/"	};
+									"https://www.hotels.com/de556383/hotels-brighton-united-kingdom/",		
+									"https://www.hotels.com/de544256/hotels-bournemouth-united-kingdom/",
+									"https://www.hotels.com/de544879/hotels-felixstowe-united-kingdom/"	};
 	   
 		//GUI constructor 
 		public GUI(){
@@ -113,7 +113,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 			 
 			slider = new JSlider(25,40,30);
 			slider.setBounds(50,50,200,200);
-			slider.setLayout(null);
+			slider.setLayout(null);				//JSlider Setup
 			slider.setPaintTicks(true);
 			slider.setMinorTickSpacing(1);
 			slider.setPaintTrack(true);
@@ -141,7 +141,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 			
 			String[] activities = {"Beach","Sightseeing","Both"};
 			  
-			comboBox = new JComboBox(activities);
+			comboBox = new JComboBox(activities);			//JComboBox setup
 			comboBox.setBounds(150, 320, 100, 170); 
 			comboBox.addActionListener(this);
 			
@@ -163,7 +163,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 			 Button4.setLayout(null);
 			 Button4.addActionListener(this);
 			  
-			 ButtonGroup group1 = new ButtonGroup();
+			 ButtonGroup group1 = new ButtonGroup();			//allows for only one button to be selected
 			 group1.add(Button1);
 			 group1.add(Button2);
 			 group1.add(Button3);
@@ -172,8 +172,8 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 			 Button1.addActionListener(this);
 			 Button2.addActionListener(this);
 			
-			checkBox = new JCheckBox();
-			checkBox.setBounds(150,450,100,50);			// 1, goes right, 2, goes down, 3,length, 4 width 
+			checkBox = new JCheckBox();			//JCheckBox setup
+			checkBox.setBounds(150,450,100,50);			
 			checkBox.setText("Human?");
 			checkBox.setFocusable(false);
 			checkBox.setFont(new Font("Consolas",Font.PLAIN,10));
@@ -204,7 +204,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {		
 		
-				// if user clicks the respective button, the variable is updated according to their preferance 
+		 // if user clicks the respective button, the variable is updated according to their preferance 
 			    if (e.getSource()==Button1) {			
 			    	direction = 1;	
 			    										//east 
@@ -222,7 +222,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 				 	
 				  }
 			 
-			    else if(e.getSource()==checkBox) {		//night life yes
+			    else if(e.getSource()==checkBox) {		//are you a human
 				  Life = 1;
 				  
 				  }
