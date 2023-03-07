@@ -29,11 +29,12 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 		JRadioButton Button1, Button2, Button3,Button4;
 		JPanel e;
 		
-		public static int weather = 0;
+		public static int weather = 0;			//variables to keep track of preferences 
 		public static int direction = 0;
 		public static int activity = 0;
 		public static int Life = 0;
 		
+		// arrays with locations in each region and activity 
 		public static String [] southBeach ={"Dubrovnik,Croatia", "Santorini, Greece", "Sveti Stefan, Montenegro","Varna, Bulgaria"};
 		public static String [] southOnly = {"Kastoria,Greece","Bitola, North Macedonia","Belgrade, Serbia","Sofia, Bulgaria"};
 		public static String [] eastOnly = {"Warsaw, Poland","Tallinn,Estonia","Vilnius, Lithuania","Riga, Latvia"};
@@ -43,6 +44,8 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 		public static String [] northOnly = {"Reykjavík, Iceland","Edinburgh, Scotland", "Oslo, Norway", "Stockholm, Sweeden"};
 	    public static String [] northBeach = {"Hastings, UK","Brighton, UK", "Bournemouth, UK", "Felixstowe, UK"};
 		
+	    
+	    //link arrays which contain the links to each location
 	    public static String [] southBeachLinks = {"https://www.hotels.com/de11117195/hotels-dubrovnik-and-vicinity-croatia/", 
 				                                    "https://www.hotels.com/de1638845/hotels-santorini-greece/",
 				                                    "https://www.hotels.com/de1695406/hotels-sveti-stefan-montenegro/",
@@ -83,6 +86,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 													"https://www.hotels.com/de544256/hotels-bournemouth-united-kingdom/",
 													"https://www.hotels.com/de544879/hotels-felixstowe-united-kingdom/"	};
 	   
+		//GUI constructor 
 		public GUI(){
 		   
 	    	image = new ImageIcon("/Users/sotirisemmanouil/git/repository4/TravelRecommend/src/image.jpg");
@@ -196,11 +200,12 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 			this.setVisible(true);
 	    }
 
-	    
+	    //handles action events 
 		@Override
-		public void actionPerformed(ActionEvent e) {
+		public void actionPerformed(ActionEvent e) {		
 		
-			    if (e.getSource()==Button1) {	
+				// if user clicks the respective button, the variable is updated according to their preferance 
+			    if (e.getSource()==Button1) {			
 			    	direction = 1;	
 			    										//east 
 			      }		
@@ -234,7 +239,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 				    activity = 3;
 				    
 				}
-			 
+			 //if enter is clicked, the different preferences are checked to produced desired result
 			    if(e.getSource()==button) {
 				
 			     if(activity == 0 || (direction == 0 && weather == 0 || Life == 0)) {
@@ -353,7 +358,7 @@ public class GUI extends JFrame implements ActionListener, ChangeListener{
 		}
 					 
 			 
-
+		//handles JSlider events
 		@Override
 		public void stateChanged(ChangeEvent e) {
 			if( 25 <= slider.getValue() && slider.getValue() <= 30) {

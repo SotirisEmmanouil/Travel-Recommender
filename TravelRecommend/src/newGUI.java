@@ -1,5 +1,4 @@
 import java.awt.Color;
-
 import java.awt.Desktop;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -19,7 +18,8 @@ public class newGUI extends JFrame implements ActionListener {
 	JButton buttone,buttone2,buttone3,buttone4;
 	public static String [] emptyAr = {};
 	JLabel label;
-	Desktop desk = Desktop.getDesktop();
+	Desktop desk = Desktop.getDesktop();		//allows desktop control
+	
 	
   public newGUI(String [] arr, String [] arr2){
 	  	result = new JTextArea("Your recommendations:\n\n");
@@ -103,7 +103,6 @@ public class newGUI extends JFrame implements ActionListener {
 	  	
 		emptyAr = arr2.clone();
 	  	
-	  	//content.add(result,BorderLayout.CENTER);
 	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setSize(700,700);
 		this.setTitle("Results!");
@@ -120,9 +119,9 @@ public class newGUI extends JFrame implements ActionListener {
   public void actionPerformed(ActionEvent event) {		
 	  
 	 if(event.getSource()==buttone) {
-		 
+	//opens the link that is located in the first entry in the array
 	     try {
-			desk.browse(new URI(emptyAr[0]));
+			desk.browse(new URI(emptyAr[0]));		
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
