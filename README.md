@@ -12,7 +12,7 @@ and outputs a list of locations in Europe that match their preferances. There ar
 `JTextArea`, `JSlider`, `JComboBox`, `JCheckBox`, `Desktop()`, `URI`, `ImageIcon`, `Color`, `JRadioButton`, `ButtonGroup`, `BorderFactory`
 
 ## Screenshots of the app:
-<img width="698" alt="Screenshot 2023-03-07 at 1 41 58 PM" src="https://user-images.githubusercontent.com/108318635/223531158-289fdb60-679b-42a1-b105-14efb0bba755.png">
+<img width="700" alt="Screenshot 2023-03-07 at 1 42 18 PM" src="https://user-images.githubusercontent.com/108318635/223531992-03dcbb23-4cc5-4954-b97f-e5c690d71400.png">
 
 <img width="700" alt="Screenshot 2023-03-07 at 1 42 18 PM" src="https://user-images.githubusercontent.com/108318635/223531263-a29cc25d-be31-4e84-b75e-a80397d6c628.png">
 
