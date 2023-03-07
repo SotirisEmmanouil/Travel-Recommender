@@ -15,8 +15,8 @@ and outputs a list of locations in Europe that match their preferances. There ar
 
 <img width="702" alt="Screenshot 2023-03-07 at 2 28 54 PM" src="https://user-images.githubusercontent.com/108318635/223532139-d4c3ec31-e1d6-43ad-a953-37fffd87eea2.png">
 
+<img width="701" alt="Screenshot 2023-03-07 at 2 59 21 PM" src="https://user-images.githubusercontent.com/108318635/223538845-b4e27857-ce1f-452e-b512-f68d7311e994.png">
 
-<img width="700" alt="Screenshot 2023-03-07 at 1 42 18 PM" src="https://user-images.githubusercontent.com/108318635/223531263-a29cc25d-be31-4e84-b75e-a80397d6c628.png">
 
 
    
