@@ -21,13 +21,13 @@ public class newGUI extends JFrame implements ActionListener {
 	Desktop desk = Desktop.getDesktop();		//allows desktop control
 	
 	
-  public newGUI(String [] arr, String [] arr2){
+  public newGUI(String [] arr, String [] arr2){		//GUI
 	  	result = new JTextArea("Your recommendations:\n\n");
 	  	result.setFont(new Font("Arial",Font.BOLD,20));
 	  	result.setForeground(Color.BLUE);
 	  	result.setEditable(false);
 	  	result.setBackground(getForeground());
-	  	result.setVisible(true); // this will display the text area so you can type in it
+	  	result.setVisible(true); 
 	  	result.setSize(300,300);
 	  	result.setLayout(null);
 	  	
