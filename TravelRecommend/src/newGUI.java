@@ -60,7 +60,7 @@ public class newGUI extends JFrame implements ActionListener {
 		buttone2.setText(arr[1]);
 		buttone2.addActionListener(this);
 		buttone2.setFocusable(false);
-		buttone2.setHorizontalTextPosition(JButton.CENTER);
+		buttone2.setHorizontalTextPosition(JButton.CENTER);		//creates button 
 		buttone2.setVerticalTextPosition(JButton.BOTTOM);
 		buttone2.setFont(new Font("Times New Roman",Font.PLAIN,15));
 		buttone2.setIconTextGap(-15);
