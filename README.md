@@ -1,5 +1,5 @@
 # Travel-Recommender
-A desktop application that collects user input, specifically their preferences:
+A desktop application that collects user input, specifically their preferences on:
 <ul>
   <li><b>Temperature</li>
   <li>Region</li>
