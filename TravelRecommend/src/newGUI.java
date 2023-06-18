@@ -31,7 +31,7 @@ public class newGUI extends JFrame implements ActionListener {
 	  	result.setSize(300,300);
 	  	result.setLayout(null);
 	  	
-	  	for(int i =0; i<arr.length; i++) {
+	  	for(int i =0; i<arr.length; i++) {	//append the recommendations to the left hand side of the GUI
 	  		result.append(arr[i]);
 	  		result.append("\n\n"); 
 	  			}	
