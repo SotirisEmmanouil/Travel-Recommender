@@ -10,7 +10,10 @@ and outputs a list of locations in Europe that match their preferances. There ar
 
 ## This project allowed me to learn more about:
 `JTextArea`, `JSlider`, `JComboBox`, `JCheckBox`, `Desktop()`, `URI`, `ImageIcon`, `Color`, `JRadioButton`, `ButtonGroup`, `BorderFactory`
-
+<ul>
+  <li><b>UI principles</li>
+    <li> UX principles</b></li>
+  </ul>
 
 
    
